@@ -20,6 +20,7 @@ public class SpringbootConfigpropsGenericApplication implements CommandLineRunne
     @Override
     public void run(String... args) throws Exception {
         for (MyPojo pojo : myProperties.getPojoList()) {
+            System.out.println("---");
             System.out.println(pojo.getOfFoo().getT().getId());
             System.out.println(pojo.getOfFooChildren().getT().getId());
             System.out.println(pojo.getOfFooClass());
@@ -27,6 +28,7 @@ public class SpringbootConfigpropsGenericApplication implements CommandLineRunne
             System.out.println(pojo.getOfGenericTypeClass());
             System.out.println(pojo.getOfGenericOfObjectClass());
             System.out.println(pojo.getOfGenericOfFooClass());
+
         }
 
     }
