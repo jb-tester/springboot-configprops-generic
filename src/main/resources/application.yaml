@@ -3,3 +3,14 @@ resilience4j:
     instances:
       rivier:
         resultPredicate: com.mytests.spring.springbootconfigpropsgeneric.originalCase.ConditionalRetryPredicate
+
+
+my:
+  generic:
+    props:
+      pojo-list:
+        - of-foo-children:
+            t: mmmm
+
+        - of-foo-children:
+            t: nnnn
