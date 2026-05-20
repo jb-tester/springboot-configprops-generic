@@ -15,6 +15,8 @@ public class MyProperties {
     MyGeneric2<String, Boolean> genericStrBoolean;
     @NestedConfigurationProperty
     MyGeneric<Boolean> genericBoolean;
+    @NestedConfigurationProperty
+    MyGeneric<String> genericString;
 
     List<MyPojo> pojoList;
     Map<String, MyPojo> pojoMap;
@@ -49,5 +51,13 @@ public class MyProperties {
 
     public void setGenericBoolean(MyGeneric<Boolean> genericBoolean) {
         this.genericBoolean = genericBoolean;
+    }
+
+    public MyGeneric<String> getGenericString() {
+        return genericString;
+    }
+
+    public void setGenericString(MyGeneric<String> genericString) {
+        this.genericString = genericString;
     }
 }

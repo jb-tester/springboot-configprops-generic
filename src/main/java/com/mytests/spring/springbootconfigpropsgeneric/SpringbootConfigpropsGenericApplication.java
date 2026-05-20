@@ -21,6 +21,7 @@ public class SpringbootConfigpropsGenericApplication implements CommandLineRunne
     public void run(String... args) throws Exception {
         System.out.println("---test properties of generic type: ---");
         System.out.println(myProperties.getGenericBoolean().getT());
+        System.out.println(myProperties.getGenericString().getT());
         System.out.println(myProperties.getGenericStrBoolean().getTypeOne());
         System.out.println(myProperties.getGenericStrBoolean().getTypeTwo());
         System.out.println("---test generic-type properties of MyPOJO : ---");
